@@ -1,6 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.*;
-public class NumeroAdyacenteTest {
+public class ProductoAdyacentesTest {
 
     @Before
     public void setUp() throws Exception {
