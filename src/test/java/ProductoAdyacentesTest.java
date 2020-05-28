@@ -19,6 +19,13 @@ public class ProductoAdyacentesTest {
     public void tearDown() throws Exception {
 
     }
+    @Test
+    public void TestTestMaximoProductoAdyacente_NumeroNegativos(){
+        int[] arreglo = { -1, 0, -3, 5};
+        int esperado = 6;
+        int real = p1.maximoProductoAdyacente(arreglo);
+        assertEquals(esperado,real);
+    }
 
     @Test
     public void TestMaximoProductoAdyacente() {
