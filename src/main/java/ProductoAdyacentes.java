@@ -36,7 +36,7 @@ public class ProductoAdyacentes {
     public static void verificarArreglo(double[] arreglo){
         if (arreglo.length<=1){
             System.out.println("El largo del arreglo es menor o igual que 1, no podemos ejecutar calcular el producto adyacente");
-            System.exit(0);
+            System.exit(-1);
         }
 
 
