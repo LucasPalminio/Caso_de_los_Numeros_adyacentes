@@ -1,6 +1,6 @@
 public class ProductoAdyacentes {
     public static double maximoProductoAdyacente(double[] arreglo){
-        //verificarArreglo(arreglo); //se ve a futuro
+        verificarArreglo(arreglo); //se ve a futuro
         double productoMayor = arreglo[0]*arreglo[1]; //Inicializamos la variable productoMayor
         //con el primer producto adyacente
 
@@ -30,6 +30,15 @@ public class ProductoAdyacentes {
             arregloDouble[i] = (double) arreglo[i];
         }
         return (int) maximoProductoAdyacente(arregloDouble);
+
+    }
+
+    public static void verificarArreglo(double[] arreglo){
+        if (arreglo.length<=1){
+            System.out.println("El largo del arreglo es menor o igual que 1, no podemos ejecutar calcular el producto adyacente");
+            System.exit(0);
+        }
+
 
     }
 }
