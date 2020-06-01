@@ -107,7 +107,7 @@ public class ProductoAdyacentesTest {
         int[] arreglo = {};
         int esperado = 0;
         int real = p1.maximoProductoAdyacente(arreglo);
-        assertEquals(esperado, real);
+        assertEquals(esperado, real,0.001);
 
     }
 
@@ -128,7 +128,22 @@ public class ProductoAdyacentesTest {
         assertEquals(esperado, real, 0.001);
 
     }
+    @Test
+    public void TestProductoAdyacente_error_StringCaracterNumerico1() {
+        String[] arreglo = {"3", "1", "1"};
+        double esperado = 3;
+        double real = p1.maximoProductoAdyacente(arreglo);
+        assertEquals(esperado, real, 0.001);
 
+    }
+    @Test
+    public void TestProductoAdyacente_error_StringCaracterNumerico2() {
+        String[] arreglo = {"2.1", "3.14", "9"};
+        double esperado = 28.26;
+        double real = p1.maximoProductoAdyacente(arreglo);
+        assertEquals(esperado, real, 0.001);
+
+    }
     @Test
     public void TestProductoAdyacente_error_StringCaracterNoNumerico() {
         String[] arreglo = {"1", "3", "a", "4.2"};
